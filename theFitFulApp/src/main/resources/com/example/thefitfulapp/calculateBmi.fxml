@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.thefitfulapp.calculateBmi">
+   <children>
+      <Text layoutX="112.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Whats your BMI?" textAlignment="CENTER">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Text>
+      <TextField fx:id="heightField" layoutX="240.0" layoutY="189.0" />
+      <TextField fx:id="weightField" layoutX="240.0" layoutY="234.0" />
+      <Button fx:id="calculateButton" layoutX="406.0" layoutY="214.0" mnemonicParsing="false" onAction="#calculateBMI" text="Calculate" />
+      <Label layoutX="226.0" layoutY="291.0" text="Your BMI Value =" />
+      <Label layoutX="229.0" layoutY="322.0" text="Your Category =" />
+      <Label fx:id="bmiValue" layoutX="332.0" layoutY="291.0" />
+      <Label fx:id="category" layoutX="332.0" layoutY="322.0" />
+      <Label layoutX="121.0" layoutY="192.0" text="Enter Height (in inc) = " />
+      <Label layoutX="119.0" layoutY="238.0" text="Enter Weight (in lbs) = " />
+      <Label layoutX="151.0" layoutY="99.0" text="this calculator is used to find out your body mass index. " />
+   </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.thefitfulapp.HelloController">
+   <children>
+      <Text layoutX="83.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To The FitFul App!" textAlignment="CENTER">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <Text layoutX="196.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Whats the move today?">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="trackCalories" layoutX="129.0" layoutY="225.0" mnemonicParsing="false" onAction="#trackCalories" text="Track Calories Burned!" />
+      <Button fx:id="calculateBmi" layoutX="324.0" layoutY="225.0" mnemonicParsing="false" onAction="#calculateBmi" text="Calculate Body Mass Index!" />
+   </children>
+</AnchorPane>
